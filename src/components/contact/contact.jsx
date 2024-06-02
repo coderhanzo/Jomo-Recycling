@@ -71,7 +71,7 @@ const Contact = () => {
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
-          <label>Your Name</label>
+          <label>Your full Name</label>
           <input
             type="text"
             name="name"
@@ -83,6 +83,13 @@ const Contact = () => {
             type="tel"
             name="phone"
             placeholder="Enter your phone number"
+            required
+          />
+          <label>Email</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter your Email"
             required
           />
           <label>Write Your Message Here</label>
