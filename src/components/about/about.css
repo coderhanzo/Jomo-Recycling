@@ -45,7 +45,7 @@
 
 .about-slide {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  padding: 40px;
+  padding: 20px;
   border-radius: 15px;
   color: #0a3e51;
   line-height: 1.4;
@@ -55,7 +55,7 @@
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  /* border-radius: 50px; */
 }
 
 /* media qurries */
@@ -75,7 +75,25 @@
   .mission-jomo {
     padding: 10px;
   }
+  .about_slide {
+    background-color: blueviolet;
+  }
   .mission-jomo img {
-    width: 50px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 540px) {
+    .about-slider {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .about-slider h3 {
+      font-size: 16px;
+    }
+    .about-slide p {
+      font-size: 11px;
+    }
   }
 }

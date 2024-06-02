@@ -28,7 +28,7 @@ nav ul li {
   display: none;
 }
 /* Media Queries */
-@media (max-width: 590px) {
+@media (max-width: 600px) {
   .logo {
     width: 85px;
   }
@@ -37,7 +37,7 @@ nav ul li {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 540px) {
   nav {
     padding: 5px 0;
   }
@@ -56,7 +56,6 @@ nav ul li {
     transform: translatex(0);
   }
   nav ul li {
-
     display: block;
     margin: 25px 40px;
   }
