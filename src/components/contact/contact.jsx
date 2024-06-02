@@ -65,7 +65,7 @@ const Contact = () => {
           </li>
           <li>
             <img src={location} alt="" />
-            No 26 eyindi street odoragunshin eredo epe LCDA Lagos Nigeria{" "}
+            No 26 Eyindi Street Odoragunshin Eredo Epe LCDA Lagos Nigeria{" "}
           </li>
         </ul>
       </div>
