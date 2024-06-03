@@ -3,9 +3,7 @@ import "./index.css";
 import Navbar from "./components/navbar/navbar.jsx";
 import Hero from "./components/hero/hero.jsx";
 import About from "./components/about/about.jsx";
-import Title from "./components/title/title.jsx";
 import Contact from "./components/contact/contact.jsx";
-import Footer from "./components/footer/footer.jsx";
 import Services from "./components/Services.jsx";
 // import Service from "./components/servicespage/services.jsx";
 

@@ -1,8 +1,8 @@
 import "./hero.css";
 import arrow from "../../assets/arrow-right-solid.svg";
 import { Link } from "react-router-dom";
-import About from "../about/about";
 import Contact from "../contact/contact";
+import Footer from "../footer/footer";
 
 import Mission from "../Mission";
 
@@ -29,6 +29,7 @@ const hero = () => {
       </div>
       <Mission />
       <Contact />
+      <Footer/>
     </>
   );
 };

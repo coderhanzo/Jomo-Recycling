@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 // import plastic_6 from "../../assets/plasticfilings2.png";
-import plastic_6 from "../../../Desktop/FOREX/plasticfilings2.png";
+import plastic_6 from "../components/plasticfilings2.png";
 import Lottie from "react-lottie";
 import Recycle from "../../src/assets/json/Animation - 1717415786014.json";
 const Mission = () => {

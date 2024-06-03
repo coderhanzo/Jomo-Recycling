@@ -1,6 +1,6 @@
 import "./footer.css";
 
-const footer = () => {
+const Footer = () => {
   return (
     <div className="footer">
       <p>© Copyright 2024 JOMO Recycling. All rights reserved.</p>
@@ -12,4 +12,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

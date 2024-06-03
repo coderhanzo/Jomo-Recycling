@@ -2,8 +2,8 @@
   width: 100%;
   min-height: 90vh;
   background: linear-gradient(
-      rgba(1, 173, 236, 0.477),
-      rgba(1, 173, 236, 0.507)
+      rgba(24, 21, 21, 0.868),
+      rgba(24, 21, 21, 0.868)
     ),
     url("../../assets/plasticfilings.jpg");
   background-size: cover;
@@ -22,7 +22,7 @@
 .hero-text h1 {
   font-size: 60px;
   font-weight: 600;
-  color: rgba(18, 17, 17, 0.812);
+  color: rgba(180, 180, 180, 0.812);
 }
 
 .hero-text p {

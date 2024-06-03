@@ -1,27 +1,28 @@
 import "./about.css";
-import { useRef } from "react";
-import right_icon from "../../assets/arrow-right-bold.svg";
-import left_icon from "../../assets/arrow-left-bold.svg";
-import plastic_6 from "../../assets/plasticfilings2.png";
-import plastic from "../../assets/plasticfilings.jpg";
+// import { useRef } from "react";
+// import right_icon from "../../assets/arrow-right-bold.svg";
+// import left_icon from "../../assets/arrow-left-bold.svg";
+// import plastic_6 from "../../assets/plasticfilings2.png";
+// import plastic from "../../assets/plasticfilings.jpg";
 import Contact from "../contact/contact";
+import Footer from "../footer/footer";
 
 const About = () => {
-  const slider = useRef(null);
-  let tx = 0;
+  // const slider = useRef(null);
+  // let tx = 0;
 
-  const slideForward = () => {
-    if (tx > -50) {
-      tx -= 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`;
-  };
-  const slideBackward = () => {
-    if (tx < 0) {
-      tx += 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`;
-  };
+  // const slideForward = () => {
+  //   if (tx > -50) {
+  //     tx -= 25;
+  //   }
+  //   slider.current.style.transform = `translateX(${tx}%)`;
+  // };
+  // const slideBackward = () => {
+  //   if (tx < 0) {
+  //     tx += 25;
+  //   }
+  //   slider.current.style.transform = `translateX(${tx}%)`;
+  // };
   return (
     <>
       {/* Commented your About US */}{" "}
@@ -35,7 +36,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Contact/>
+      <Contact />
+      <Footer />
       {/* <div className="about">
         <img
           src={right_icon}
