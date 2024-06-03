@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
 import menu_icon from "../../assets/menu.svg";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   /**
@@ -31,28 +31,16 @@ const Navbar = () => {
       <img src={logo} alt="" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link smooth={true} to="home" offset={0} duration={500}>
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/" smooth={true} offset={-240} duration={500}>
-            Service
-          </Link>
+          <Link to="/services">Service</Link>
         </li>
         <li>
-          <Link to="about" smooth={true} offset={-165} duration={500}>
-            About Us
-          </Link>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link
-            className="btn"
-            to="contact"
-            smooth={true}
-            offset={-160}
-            duration={500}
-          >
+          <Link className="btn" to="/contact">
             Contact
           </Link>
         </li>

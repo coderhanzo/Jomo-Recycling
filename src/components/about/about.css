@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .about {
   margin: 80px auto;
   padding: 0 80px;
@@ -49,6 +53,7 @@
   border-radius: 15px;
   color: #0a3e51;
   line-height: 1.4;
+  /* border: 2px solid red; */
 }
 
 .mission-jomo img {
