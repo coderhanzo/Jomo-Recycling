@@ -34,7 +34,7 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <div className=" text-black h-[36rem] w-[29rem] shadow-xl rounded-lg   max-sm:w-[23rem]  ">
+        <div className=" text-black h-[36rem] w-[29rem] shadow-xl rounded-lg hover:scale-105 hover:duration-150  max-sm:w-[23rem]  ">
           <div className="flex justify-center">
             <img src={plastic} alt="" className="w-[18rem] max-sm:w-[15rem]" />
           </div>
@@ -53,7 +53,7 @@ const Mission = () => {
           </div>
           <div className="flex justify-center items-center">
             <Link to="/services">
-              <button className="btn">Learn More</button>
+              <button className="btn font-semibold ">Learn More</button>
             </Link>
           </div>
         </div>
