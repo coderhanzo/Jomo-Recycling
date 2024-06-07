@@ -11,7 +11,7 @@ const hero = () => {
   return (
     <>
       <div className="hero container" id="home">
-        <div className="hero-text hidden">
+        <div className="hero-text ">
           <h1>Transforming Waste Into Resources</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
