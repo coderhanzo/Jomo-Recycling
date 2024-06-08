@@ -4,8 +4,8 @@ import Navbar from "./components/navbar/navbar.jsx";
 import Hero from "./components/hero/hero.jsx";
 import About from "./components/about/about.jsx";
 import Contact from "./components/contact/contact.jsx";
-import Services from "./components/Services.jsx";
-// import Service from "./components/servicespage/services.jsx";
+// import Services from "./components/Services.jsx";
+import Services from "./components/servicespage/services.jsx";
 
 const App = () => {
   return (
