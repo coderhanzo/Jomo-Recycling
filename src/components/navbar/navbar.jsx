@@ -1,51 +1,63 @@
 import { useState } from "react";
-// add useEffect for sticky
-// import { useEffect, useState } from "react";
-import "./navbar.css";
-import logo from "../../assets/logo.png";
-import menu_icon from "../../assets/menu.svg";
 import { Link } from "react-router-dom";
+import menu_icon from "../../assets/menu.svg";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-  /**
-   * uncommit this to make the navbar sticky
-   * (this is the logic to make the navbar sticky)
-   */
-  // const [sticky, setSticky] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     window.scrollY > 50 ? setSticky(true) : setSticky(false);
-  //   });
-  // }, []);
   const [mobileMenu, setMobileMenu] = useState(false);
+
   const toggleMenu = () => {
-    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+    setMobileMenu(!mobileMenu);
   };
 
   return (
-    <nav className={`container`}>
-      {/* add this line to the className if you want the navbar to stick whiles scrolling  */}
-      {/* container ${sticky ? "dark-nav" : ""} */}
-
-      <img src={logo} alt="" className="logo" />
-      <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
-        <li>
-          <Link to="/">Home</Link>
+    <nav className="w-full py-2 flex justify-between items-center bg-gray-100 fixed top-0 left-0 z-10">
+      <Link to="/">
+        <img src={logo} alt="Logo" className="w-24 md:w-20" />
+      </Link>
+      <ul
+        className={`${
+          mobileMenu
+            ? "fixed top-0 right-0 bottom-0 bg-black bg-opacity-75 text-white w-40 pt-8 transition-transform transform translate-x-0"
+            : "fixed top-0 right-0 bottom-0 bg-black bg-opacity-75 text-white w-40 pt-8 transition-transform transform translate-x-full md:static md:flex md:bg-transparent md:w-auto md:p-0 md:translate-x-0"
+        }`}
+      >
+        <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
+          <Link to="/hero" className="text-lg md:text-base hover:text-gray-400">
+            Home
+          </Link>
         </li>
-        <li>
-          <Link to="/services">Service</Link>
+        <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
+          <Link
+            to="/services"
+            className="text-lg md:text-base hover:text-gray-400"
+          >
+            Services
+          </Link>
         </li>
-        <li>
-          <Link to="/about">About Us</Link>
+        <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
+          <Link
+            to="/about"
+            className="text-lg md:text-base hover:text-gray-400"
+          >
+            About Us
+          </Link>
         </li>
-        <li>
-          <Link className="btn" to="/contact">
+        <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
+          <Link
+            to="/contact"
+            className="text-lg md:text-base hover:text-gray-400 bg-blue-500 text-white px-4 py-2 rounded md:bg-transparent md:text-blue-500 md:border md:border-blue-500 md:hover:bg-blue-500 md:hover:text-white transition"
+          >
             Contact
           </Link>
         </li>
       </ul>
-      <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
+      <img
+        src={menu_icon}
+        alt="Menu"
+        className="block w-8 cursor-pointer md:hidden"
+        onClick={toggleMenu}
+      />
     </nav>
   );
 };
