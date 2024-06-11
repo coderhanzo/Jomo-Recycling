@@ -40,12 +40,12 @@ const Navbar = () => {
     <nav className={`container`}>
       {/* add this line to the className if you want the navbar to stick whiles scrolling  */}
       {/* container ${sticky ? "dark-nav" : ""} */}
-      <Link to="/hero">
+      <Link to="/">
         <img src={logo} alt="" className="logo" />
       </Link>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to="/hero">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/service">Service</Link>

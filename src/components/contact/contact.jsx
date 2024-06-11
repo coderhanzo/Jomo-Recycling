@@ -20,7 +20,7 @@ const Contact = () => {
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
-    })
+    });
 
     const data = await response.json();
 
@@ -70,6 +70,10 @@ const Contact = () => {
         </ul>
       </div>
       <div className="contact-col">
+        {/* <h3>
+          Want to make an Enquire?
+          <img src={message} alt="" />
+        </h3> */}
         <form onSubmit={onSubmit}>
           <label>Your full Name</label>
           <input

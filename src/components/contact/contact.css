@@ -9,17 +9,17 @@
 .contact-col {
   flex-basis: 48%;
   color: #021e29;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .contact-col h3 {
   color: #032530;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   text-decoration: underline;
   display: flex;
   align-items: center;
-  justify-content: center;
+
   margin-bottom: 15px;
 }
 
@@ -76,5 +76,9 @@
   }
   .contact-col {
     padding: 15px;
+  }
+  .contact-col h3 {
+    justify-content: center;
+    font-size: 30px;
   }
 }

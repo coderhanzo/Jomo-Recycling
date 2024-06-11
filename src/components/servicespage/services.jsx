@@ -10,10 +10,10 @@ const Services = () => {
   }, []);
   return (
     <>
-      <div className="bg-gray-900 text-white">
+      <div className="bg-gray-900 text-white rounded-b-[16px]">
         {/* Services Header */}
         <div
-          className="relative bg-cover bg-center h-64"
+          className="relative bg-cover bg-center h-64  rounded-b-2xl"
           style={{
             backgroundImage: "url('https://via.placeholder.com/1200x400')",
           }}
