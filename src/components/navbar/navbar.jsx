@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // add useEffect for sticky
 // import { useEffect, useState } from "react";
 import "./navbar.css";
@@ -18,23 +18,37 @@ const Navbar = () => {
   //     window.scrollY > 50 ? setSticky(true) : setSticky(false);
   //   });
   // }, []);
+
   const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
   };
+  // add unscroll event listener: disables menu bar when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      setMobileMenu(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
   return (
+    // <nav className={`container ${sticky ? "dark-nav" : ""}`}>
     <nav className={`container`}>
       {/* add this line to the className if you want the navbar to stick whiles scrolling  */}
       {/* container ${sticky ? "dark-nav" : ""} */}
-
-      <img src={logo} alt="" className="logo" />
+      <Link to="/hero">
+        <img src={logo} alt="" className="logo" />
+      </Link>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/hero">Home</Link>
         </li>
         <li>
-          <Link to="/services">Service</Link>
+          <Link to="/service">Service</Link>
         </li>
         <li>
           <Link to="/about">About Us</Link>

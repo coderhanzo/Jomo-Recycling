@@ -15,9 +15,11 @@
 .contact-col h3 {
   color: #032530;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 35px;
+  text-decoration: underline;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
 }
 

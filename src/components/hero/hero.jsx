@@ -1,4 +1,5 @@
 import "./hero.css";
+// import { useEffect } from "react";
 import arrow from "../../assets/arrow-right-solid.svg";
 import { Link } from "react-router-dom";
 import Contact from "../contact/contact";
@@ -6,7 +7,7 @@ import Footer from "../footer/footer";
 
 import Mission from "../Mission";
 
-const hero = () => {
+const Hero = () => {
   return (
     <>
       <div className="hero container" id="home">
@@ -31,4 +32,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;

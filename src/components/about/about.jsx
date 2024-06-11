@@ -5,6 +5,7 @@ import "./about.css";
 // import plastic_6 from "../../assets/plasticfilings2.png";
 // import plastic from "../../assets/plasticfilings.jpg";
 import Contact from "../contact/contact";
+import { useEffect } from "react";
 import Footer from "../footer/footer";
 
 const About = () => {
@@ -23,18 +24,11 @@ const About = () => {
   //   }
   //   slider.current.style.transform = `translateX(${tx}%)`;
   // };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      {/* Commented your About US */}{" "}
-      {/* <div>
-        <div className="about-us-container ">
-          <div className="overlay"></div>
-
-          <div className="about-us-p ">
-            <p>About Us!</p>
-          </div>
-        </div>
-      </div> */}
       <div>
         {/* About Us Section */}
         <section className="container mx-auto p-5">
@@ -87,24 +81,6 @@ const About = () => {
             </h2>
             <div className="grid lg:grid-cols-2 gap-10 mt-10">
               {/* Left Column */}
-              <div className="flex flex-col space-y-4">
-                <img
-                  src="https://via.placeholder.com/200x150"
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
-                <img
-                  src="https://via.placeholder.com/200x150"
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
-                <img
-                  src="https://via.placeholder.com/200x150"
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
-              </div>
-              {/* Right Column */}
               <div className="text-center lg:text-left">
                 <p className="mt-4 text-lg text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -124,6 +100,23 @@ const About = () => {
                   Aenean massa. Cum sociis natoque penatibus et magnis dis
                   parturient montes, nascetur ridiculus mus.
                 </p>
+              </div>
+              <div className="flex flex-col space-y-4">
+                <img
+                  src="https://via.placeholder.com/200x150"
+                  alt="Our Story"
+                  className="rounded-lg shadow-lg"
+                />
+                <img
+                  src="https://via.placeholder.com/200x150"
+                  alt="Our Story"
+                  className="rounded-lg shadow-lg"
+                />
+                <img
+                  src="https://via.placeholder.com/200x150"
+                  alt="Our Story"
+                  className="rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>

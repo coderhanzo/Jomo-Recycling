@@ -1,8 +1,13 @@
 import "./services.css";
 import Contact from "../contact/contact";
 import Footer from "../footer/footer";
+import { useEffect } from "react";
 
 const Services = () => {
+  // Scrolls to the top of the page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="bg-gray-900 text-white">

@@ -17,7 +17,7 @@ const Mission = () => {
   };
   return (
     <>
-      <div className="p-5 grid grid-cols-3 gap-5 content-center max-sm:grid-cols-1">
+      <div className="p-3 grid grid-cols-3 gap-4 content-center max-sm:grid-cols-1">
         <div className="text-black h-[37rem] w-[24rem] shadow-xl rounded-lg max-sm:w-[23rem] mx-auto">
           <div className="flex justify-center">
             <img src={plastic} alt="" className="w-[15rem] max-sm:w-[15rem]" />
@@ -51,7 +51,7 @@ const Mission = () => {
             </p>
           </div>
           <div className="flex justify-center items-center pt-3">
-            <Link to="/services">
+            <Link to="/service">
               <button className="btn font-semibold">Learn More</button>
             </Link>
           </div>
