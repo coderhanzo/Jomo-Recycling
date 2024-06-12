@@ -8,6 +8,9 @@ import Contact from "../contact/contact";
 import { useEffect } from "react";
 import Footer from "../footer/footer";
 import community from "../../assets/community-picking.jpeg";
+import community1 from "../../assets/plastic-bottle.jpeg";
+import community2 from "../../assets/aboutpicture.jpg";
+import painitng from "../../assets/painting-recycling.jpeg";
 
 const About = () => {
   // const slider = useRef(null);
@@ -34,25 +37,25 @@ const About = () => {
         {/* About Us Section */}
         <section className="container mx-auto p-5">
           <div
-            className="relative bg-cover bg-center h-[10rem] rounded-lg"
-            style={{
-              backgroundImage: "url('https://via.placeholder.com/1200x400')",
-            }}
+            className="relative bg-cover bg-center bg-somepic h-[10rem] rounded-lg"
+            // style={{
+            //   backgroundImage: "url('https://via.placeholder.com/1200x400')",
+            // }}
           >
             <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
             <div className="relative flex justify-center items-center h-full">
-              <h2 className="text-3xl font-bold text-white">About Us</h2>
+              <h2 className="text-[3rem] font-bold text-white ">About Us</h2>
             </div>
           </div>
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left Column */}
-            <div className="text-center lg:text-left">
-              <p className="mt-4 text-lg text-gray-700">
-                At JOMO RECYCLE, our mission is to lead in PET recycling,
-                promoting a circular economy where every PET bottle gets a new
-                life. We aim to reduce plastic waste, conserve resources, and
-                minimize environmental impact through innovative recycling
-                solutions.
+            <div className="text-center lg:text-left ">
+              <p className="mt-4 text-lg text-gray-700 ">
+                At <span className="text-newblue">JOMO RECYCLE</span>, our
+                mission is to lead in PET recycling, promoting a circular
+                economy where every PET bottle gets a new life. We aim to reduce
+                plastic waste, conserve resources, and minimize environmental
+                impact through innovative recycling solutions.
               </p>
               <p className="mt-4 text-lg text-gray-700">
                 Partnering with communities and businesses, we strive for a
@@ -77,17 +80,17 @@ const About = () => {
         {/* Our Story Section */}
         <section className="bg-white py-10">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-blue-800 text-center">
+            <h2 className="text-[3rem] font-bold text-blue-800 text-center">
               Our Story
             </h2>
             <div className="grid lg:grid-cols-2 gap-10 mt-10">
               {/* Left Column */}
               <div className="text-center lg:text-left">
                 <p className="mt-4 text-lg text-gray-700">
-                  <span className="text-blue-800">JOMO RECYCLE</span> was
-                  founded with a vision to revolutionize PET plastic recycling.
-                  Although we are new in the industry, our commitment to
-                  sustainability and innovative recycling methods sets us apart.
+                  <span className="text-newblue">JOMO RECYCLE</span> was founded
+                  with a vision to revolutionize PET plastic recycling. Although
+                  we are new in the industry, our commitment to sustainability
+                  and innovative recycling methods sets us apart.
                 </p>
                 <p className="mt-4 text-lg text-gray-700">
                   We are dedicated to transforming plastic waste into valuable
@@ -103,17 +106,17 @@ const About = () => {
               </div>
               <div className="flex flex-col space-y-4">
                 <img
-                  src="https://via.placeholder.com/200x150"
+                  src={painitng}
                   alt="Our Story"
                   className="rounded-lg shadow-lg"
                 />
                 <img
-                  src="https://via.placeholder.com/200x150"
+                  src={community2}
                   alt="Our Story"
                   className="rounded-lg shadow-lg"
                 />
                 <img
-                  src="https://via.placeholder.com/200x150"
+                  src={community1}
                   alt="Our Story"
                   className="rounded-lg shadow-lg"
                 />

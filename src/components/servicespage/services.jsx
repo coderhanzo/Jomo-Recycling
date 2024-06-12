@@ -13,10 +13,10 @@ const Services = () => {
       <div className="bg-gray-900 text-white rounded-b-[16px]">
         {/* Services Header */}
         <div
-          className="relative bg-cover bg-center h-64  rounded-b-2xl"
-          style={{
-            backgroundImage: "url('https://via.placeholder.com/1200x400')",
-          }}
+          className="relative bg-cover bg-center h-64  rounded-b-2xl bg-jomologo"
+          // style={{
+          //   backgroundImage: "url('https://via.placeholder.com/1200x400')",
+          // }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="relative flex justify-center items-center h-full">
