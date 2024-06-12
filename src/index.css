@@ -22,10 +22,10 @@ a {
   cursor: pointer;
 }
 
-.container {
-  padding-left: 40px;
-  padding-right: 40px;
-}
+/* .container {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
 
 .btn {
   background: #01acec;
@@ -111,10 +111,10 @@ a {
 }
 /* media qurries */
 @media (max-width: 700px) {
-  .container {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+  /* .container {
+    padding-left: 2%;
+    padding-right: 2%;
+  } */
   .btn {
     padding: 14px 22px;
   }
