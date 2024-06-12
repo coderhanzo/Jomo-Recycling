@@ -7,6 +7,7 @@ import "./about.css";
 import Contact from "../contact/contact";
 import { useEffect } from "react";
 import Footer from "../footer/footer";
+import community from "../../assets/community-picking.jpeg";
 
 const About = () => {
   // const slider = useRef(null);
@@ -65,7 +66,7 @@ const About = () => {
             {/* Right Column */}
             <div className="flex justify-center">
               <img
-                src="https://via.placeholder.com/400x300"
+                src={community}
                 alt="About Us"
                 className="rounded-lg shadow-lg pt-5"
               />
@@ -83,22 +84,21 @@ const About = () => {
               {/* Left Column */}
               <div className="text-center lg:text-left">
                 <p className="mt-4 text-lg text-gray-700">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                  natoque penatibus et magnis dis parturient montes, nascetur
-                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                  eu, pretium quis, sem.
+                  <span className="text-blue-800">JOMO RECYCLE</span> was
+                  founded with a vision to revolutionize PET plastic recycling.
+                  Although we are new in the industry, our commitment to
+                  sustainability and innovative recycling methods sets us apart.
                 </p>
                 <p className="mt-4 text-lg text-gray-700">
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
-                  ut, imperdiet a, venenatis vitae, justo. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Aenean commodo ligula eget
-                  dolor.
+                  We are dedicated to transforming plastic waste into valuable
+                  resources and fostering a circular economy. As we embark on
+                  this journey, we look forward to making a significant impact
+                  on the environment and contributing to a greener future.
                 </p>
                 <p className="mt-4 text-lg text-gray-700">
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis
-                  parturient montes, nascetur ridiculus mus.
+                  This concise write-up emphasizes the company's new status and
+                  its dedication to making a positive environmental impact,
+                  aligning well with the rest of the content.
                 </p>
               </div>
               <div className="flex flex-col space-y-4">
