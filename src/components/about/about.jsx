@@ -67,18 +67,18 @@ const About = () => {
               </button> */}
             </div>
             {/* Right Column */}
-            <div className="flex justify-center">
+            <div className="flex  justify-center">
               <img
                 src={community}
                 alt="About Us"
-                className="rounded-lg shadow-lg pt-5"
+                className="rounded-lg shadow-lg lg:pt-5"
               />
             </div>
           </div>
         </section>
 
         {/* Our Story Section */}
-        <section className="bg-white py-10">
+        <section className="bg-white py-10 px-[15px] sm:px-[2%]">
           <div className="container mx-auto">
             <h2 className="text-[3rem] font-bold text-blue-800 text-center">
               Our Story
@@ -104,12 +104,7 @@ const About = () => {
                   aligning well with the rest of the content.
                 </p>
               </div>
-              <div className="flex flex-col space-y-4">
-                <img
-                  src={painitng}
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
+              <div className="flex flex-col space-y-4 sm:space-y-6">
                 <img
                   src={community2}
                   alt="Our Story"
@@ -117,6 +112,11 @@ const About = () => {
                 />
                 <img
                   src={community1}
+                  alt="Our Story"
+                  className="rounded-lg shadow-lg"
+                />
+                <img
+                  src={painitng}
                   alt="Our Story"
                   className="rounded-lg shadow-lg"
                 />
