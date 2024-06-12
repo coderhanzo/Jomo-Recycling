@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+// import { Link } from "react-router-dom";
 import message from "../../assets/message.svg";
 import mail from "../../assets/mail.svg";
 import phone from "../../assets/phone-light.svg";
@@ -47,8 +48,10 @@ const Contact = () => {
         </p>
         <ul>
           <li>
-            <img src={mail} alt="" />
-            info@jomorecycle.com
+            <a href="mailto:info@jomorecycle.com" target="_blank">
+              <img src={mail} alt="" />
+              info@jomorecycle.com
+            </a>
           </li>
           <li>
             <a
@@ -60,12 +63,19 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <img src={phone} alt="" />
-            +234 813 182 1768
+            <a href="tel:+234 813 182 1768" target="_blank">
+              <img src={phone} alt="" />
+              +234 813 182 1768
+            </a>
           </li>
           <li>
-            <img src={location} alt="" />
-            No 26 Eyindi Street Odoragunshin Eredo Epe LCDA Lagos Nigeria{" "}
+            <a
+              href="No 26 Eyindi Street Odoragunshin Eredo Epe LCDA Lagos Nigeria"
+              target="_blank"
+            >
+              <img src={location} alt="" />
+              No 26 Eyindi Street Odoragunshin Eredo Epe LCDA Lagos Nigeria
+            </a>
           </li>
         </ul>
       </div>
