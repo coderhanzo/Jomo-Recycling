@@ -10,7 +10,7 @@ import Mission from "../Mission";
 const Hero = () => {
   return (
     <>
-      <div className="hero container" id="home">
+      <div className="hero" id="home">
         <div className="hero-text ">
           <h1>Transforming Waste Into Resources</h1>
           <p>

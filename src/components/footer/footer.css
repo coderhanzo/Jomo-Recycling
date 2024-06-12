@@ -14,7 +14,7 @@
 }
 
 /* Media Querries */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .footer {
     display: block;
     text-align: center;
@@ -25,4 +25,4 @@
   .footer ul {
     margin-top: 10px;
   }
-}
+} */

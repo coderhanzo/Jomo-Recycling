@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     // <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-    <nav className={`container`}>
+    <nav className={``}>
       {/* add this line to the className if you want the navbar to stick whiles scrolling  */}
       {/* container ${sticky ? "dark-nav" : ""} */}
       <Link to="/">

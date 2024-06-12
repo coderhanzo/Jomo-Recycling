@@ -10,7 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  /* z-index: 10; */
   /* margin: 10px auto; */
 }
 
@@ -46,7 +46,7 @@ nav ul li {
     top: 0;
     right: 0;
     bottom: 70%;
-    border-bottom-left-radius: 15px;
+    /* border-bottom-left-radius: 15px; */
     background: rgba(31, 31, 31, 0.59);
     color: #fff;
     z-index: 5;
