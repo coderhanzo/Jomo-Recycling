@@ -5,6 +5,8 @@ import "./navbar.css";
 import logo from "../../assets/logo.png";
 import menu_icon from "../../assets/menu.svg";
 import { Link } from "react-router-dom";
+import menu_icon from "../../assets/menu.svg";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   /**
@@ -20,8 +22,9 @@ const Navbar = () => {
   // }, []);
 
   const [mobileMenu, setMobileMenu] = useState(false);
+
   const toggleMenu = () => {
-    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+    setMobileMenu(!mobileMenu);
   };
   // add unscroll event listener: disables menu bar when scrolling
   useEffect(() => {
@@ -50,16 +53,29 @@ const Navbar = () => {
         <li>
           <Link to="/service">Service</Link>
         </li>
-        <li>
-          <Link to="/about">About Us</Link>
+        <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
+          <Link
+            to="/about"
+            className="text-lg md:text-base hover:text-gray-400"
+          >
+            About Us
+          </Link>
         </li>
-        <li>
-          <Link className="btn" to="/contact">
+        <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
+          <Link
+            to="/contact"
+            className="text-lg md:text-base hover:text-gray-400 bg-blue-500 text-white px-4 py-2 rounded md:bg-transparent md:text-blue-500 md:border md:border-blue-500 md:hover:bg-blue-500 md:hover:text-white transition"
+          >
             Contact
           </Link>
         </li>
       </ul>
-      <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
+      <img
+        src={menu_icon}
+        alt="Menu"
+        className="block w-8 cursor-pointer md:hidden"
+        onClick={toggleMenu}
+      />
     </nav>
   );
 };
