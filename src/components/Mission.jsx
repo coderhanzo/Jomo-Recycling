@@ -18,7 +18,7 @@ const Mission = () => {
   return (
     <>
       <div className="p-3 grid grid-cols-3 gap-4 content-center max-sm:grid-cols-1">
-        <div className="text-black h-[37rem] w-[24rem] shadow-xl rounded-lg max-sm:w-[23rem] mx-auto">
+        <div className="text-black h-[37rem] w-[24rem] shadow-xl rounded-lg max-sm:w-[23rem] mx-auto hover:scale-105 hover:duration-150">
           <div className="flex justify-center">
             <img src={plastic} alt="" className="w-[15rem] max-sm:w-[15rem]" />
           </div>
@@ -56,7 +56,7 @@ const Mission = () => {
             </Link>
           </div>
         </div>
-        <div className="text-black h-[37rem] w-[24rem] shadow-xl rounded-lg max-sm:w-[23rem] mx-auto">
+        <div className="text-black h-[37rem] w-[24rem] shadow-xl rounded-lg max-sm:w-[23rem] mx-auto hover:scale-105 hover:duration-150">
           <div className="flex justify-center">
             <img src={plastic} alt="" className="w-[15rem] max-sm:w-[15rem]" />
           </div>
