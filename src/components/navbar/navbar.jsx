@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 // add useEffect for sticky
-// import { useEffect, useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
 import menu_icon from "../../assets/menu.svg";
 import { Link } from "react-router-dom";
-import menu_icon from "../../assets/menu.svg";
-import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   /**
@@ -64,7 +61,7 @@ const Navbar = () => {
         <li className="block mt-6 md:mt-0 md:inline-block md:ml-4">
           <Link
             to="/contact"
-            className="text-lg md:text-base hover:text-gray-400 bg-blue-500 text-white px-4 py-2 rounded md:bg-transparent md:text-blue-500 md:border md:border-blue-500 md:hover:bg-blue-500 md:hover:text-white transition"
+            className="text-lg md:text-base hover:text-gray-400 bg-newblue text-white px-4 py-2 rounded-[30px] md:bg-transparent md:text-newblue md:border md:border-newblue md:hover:bg-newblue md:hover:text-white transition"
           >
             Contact
           </Link>
