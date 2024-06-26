@@ -19,7 +19,7 @@ const Hero = () => {
             promoting a circular economy for a greener, more sustainable future.
           </p>
           <Link to="/about">
-            <button className="btn">
+            <button className="btn hover:scale-105 hover:duration-150">
               Learn More <img src={arrow} alt="" />
             </button>
           </Link>
