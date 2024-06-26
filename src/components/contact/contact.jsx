@@ -101,7 +101,7 @@ const Contact = () => {
           />
           <label>Email</label>
           <input
-            type="tel"
+            type="email"
             name="phone"
             placeholder="Enter your Email"
             required
