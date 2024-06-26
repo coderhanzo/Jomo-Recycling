@@ -83,9 +83,9 @@ const About = () => {
             <h2 className="text-[3rem] font-bold text-blue-800 text-center">
               Our Story
             </h2>
-            <div className="grid lg:grid-cols-2 gap-10 mt-10">
-              {/* Left Column */}
-              <div className="text-center lg:text-left">
+
+            <div className="grid grid-cols-2 place-items-center gap-3 max-sm:grid-cols-1">
+              <div className="text-center lg:text-left  ">
                 <p className="mt-4 text-lg text-gray-700">
                   <span className="text-newblue">JOMO RECYCLE</span> was founded
                   with a vision to revolutionize PET plastic recycling. Although
@@ -104,23 +104,22 @@ const About = () => {
                   aligning well with the rest of the content.
                 </p>
               </div>
-              <div className="flex flex-col space-y-4 sm:space-y-6">
-                <img
-                  src={community2}
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
-                <img
-                  src={community1}
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
-                <img
-                  src={painitng}
-                  alt="Our Story"
-                  className="rounded-lg shadow-lg"
-                />
-              </div>
+
+              <img
+                src={community2}
+                alt="Our Story"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src={community1}
+                alt="Our Story"
+                className="rounded-lg shadow-lg"
+              />
+              <img
+                src={painitng}
+                alt="Our Story"
+                className="rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>
